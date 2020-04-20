@@ -125,11 +125,62 @@ body {margin:0;font-family:Arial}
   }
 }
 		</style>
-	</head>
-	<body>
-	
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ossau.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Welcome to Fulvus</h1>
+    <p>Fulvus is your friend</p>
+    <button>Explore</button>
+  </div>
+</div>
 <div class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
+  <a href="#games">Games</a>
+  <a href="#resources">Resources</a>
+  <a href="#coding">Coding</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <div class="dropdown">
@@ -145,13 +196,6 @@ body {margin:0;font-family:Arial}
   <a href="#about">About</a>
   <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-
-<div style="padding-left:16px">
-  <h2>Responsive Topnav with Dropdown</h2>
-  <p>Resize the browser window to see how it works.</p>
-  <p>Hover over the dropdown button to open the dropdown menu.</p>
-</div>
-
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -162,6 +206,5 @@ function myFunction() {
   }
 }
 </script>
-
 </body>
 </html>
