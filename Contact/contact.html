@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Home</a>
+      <a href="#games">Games</a>
+      <a href="#resources">Resources</a>
+      <a href="#coding">Coding</a>
+      <a href="#music">Music</a>
+      <div class="dropdown">
+        <button class="dropbtn">Essays
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="Essay/essay1.html">Modern Ideology</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <a href="Contact/contact.html">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <form action="mailto:tadjiro@velzel.com" method="post" enctype="text/plain">
+      <label for="">Your Name:</label>
+      <input type="text" name="yourName" value=""> <br>
+      <label for="">Your Email</label>
+      <input type="email" name="yourEmail" value="">
+      <hr>
+      <label for="">Your Message:</label>  <br>
+      <textarea name="yourMessage" rows="20" cols="100"></textarea> <br>
+      <input type="submit" name="">
+    </form>
+  </body>
+</html>

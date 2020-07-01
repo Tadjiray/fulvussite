@@ -1,9 +1,21 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta name="Navbar" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+hr
+{
+      color: #1fab89;
+      border-style: dotted none none;
+      border-width: thick;
+      width:95%;
+}
+body
+{margin:0;font-family:Arial}
+* {box-sizing: border-box;
+  position: relative;
+}
+.container
+{
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -106,9 +118,6 @@
     text-align: left;
   }
 }
-		</style>
-<meta name="Hero" content="width=device-width, initial-scale=1">
-<style>
 body, html {
   height: 100%;
   margin: 0;
@@ -148,45 +157,3 @@ body, html {
   background-color: #555;
   color: white;
 }
-</style>
-</head>
-<body>
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="active">Home</a>
-  <a href="#games">Games</a>
-  <a href="#resources">Resources</a>
-  <a href="#coding">Coding</a>
-  <a href="#music">Music</a>
-  <div class="dropdown">
-    <button class="dropbtn">Essays
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="Essay/essay1.html">Modern Ideology</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
-  </div>
-  <a href="Contact/contact.html">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
-<div class="hero-image">
-	<div class="hero-text">
-    <h1 style="font-size:70px">Welcome to Fulvus</h1>
-    <h1 style="font size:20px">The future is your friend</h1>
-    <button>Explore</button>
-  </div>
-</div>
-</body>
-</html>
